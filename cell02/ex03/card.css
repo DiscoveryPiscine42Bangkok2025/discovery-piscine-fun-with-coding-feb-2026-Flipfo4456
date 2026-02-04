@@ -7,36 +7,34 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* กล่องการ์ดหลัก */
+
 .card-container {
-    background-color: white;
+    background-color: rgb(217, 248, 189);
     width: 300px;
     padding: 20px;
-    border-radius: 15px; /* มุมโค้ง */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* เงาฟุ้งๆ */
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
     text-align: center;
 }
 
 .card-title {
-    color: #333;
+    color: #27570e;
     margin-top: 0;
 }
 
-/* รูปโปรไฟล์ */
-.profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; /* ทำเป็นวงกลม */
+.img {
+    width: 200px;
+    height: 200px;
+    border-radius: 55%; 
     object-fit: cover;
     margin-bottom: 15px;
-    border: 3px solid #3498db;
+    border: 6px solid #136b19;
 }
 
-/* --- ส่วนสำคัญ: ตารางต้องมองไม่เห็นขอบ --- */
 .info-table {
     width: 100%;
-    border-collapse: collapse; /* ยุบขอบ */
-    border: none; /* ไม่มีเส้นขอบ */
+    border-collapse: collapse; 
+    border: none; 
     margin-bottom: 15px;
 }
 
@@ -46,23 +44,28 @@ body {
     font-weight: bold;
 }
 
-/* ไอคอนโซเชียล */
 .social-icon {
     width: 30px;
     margin: 0 5px;
     cursor: pointer;
 }
 
-/* ปุ่ม Contact */
-.contact-btn {
+.btn {
     background-color: black;
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
     font-size: 16px;
+    border-radius: 20px;
 }
 
-.contact-btn:hover {
-    background-color: #333; /* เปลี่ยนสีตอนชี้ */
+.btn:hover {
+    background-color: #333;
+    transform: translateY(-5px) translateX(2px); 
+}
+
+.btn:active {
+    background-color: #295087;
+    transform: translateY(2px) translateX(0px); 
 }
