@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scrollbar-width: none;
+}
+h1{
+    margin: 0;
+}
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    margin-bottom: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:  rgb(45, 45, 50);
+}
+
+
+.Ptitle{
+    background-color: black;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+    margin: 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    position: sticky; 
+    top: 0;
+    z-index: 1;
+}
+
+.topic{
+    font-size: 2.7em;
+    font-weight: bold;
+
+}
+
+.sect-card{
+
+    gap: 100px;
+    margin: 40px;
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-container {
+    background-color: rgb(217, 248, 189);
+    width: 260px;
+    padding: 20px;
+    border-radius: 15px; 
+    box-shadow: 10px 15px 18px rgba(0, 0, 0, 0.499); 
+    text-align: center;
+    transition: all 0.2s ease;
+}
+.card-container.ing {
+    background-color: rgb(59, 109, 245);
+}
+.card-container:hover {
+    transform: scale(1.04);
+    filter: none;
+}
+
+.sect-card:has(.card-container:hover) .card-container:not(:hover) {
+    filter: blur(4px);     
+    transform: scale(0.9); 
+}
+.card-title {
+    color: #27570e;
+    margin-top: 0;
+}
+.card-title.ing {
+    font-size: 1.4rem;
+    color: #f4f4f4;
+    margin-top: 0;
+}
+
+
+.img {
+    width: 200px;
+    height: 200px;
+    border-radius: 55%; 
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 6px solid #136b19;
+}
+
+.img.ing {
+    width: 200px;
+    height: 200px;
+    border-radius: 55%; 
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 6px solid #13286b;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse; 
+    border: none; 
+    margin-bottom: 15px;
+}
+
+.info-text {
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.social-icon {
+    width: 30px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 20px;
+    transition: all 0.2s ease-out;
+}
+
+.btn:hover {
+    background-color: #333;
+    transform: translateY(-5px) translateX(2px); 
+}
+
+.btn:active {
+    background-color: #295087;
+    transform: translateY(2px) translateX(0px); 
+}
+
+.sect-bottom{
+    padding: 20px;
+    margin-bottom: 0;
+    background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+.sect-card {
+    gap: 30px;
+    flex-wrap: wrap; 
+}
+}
